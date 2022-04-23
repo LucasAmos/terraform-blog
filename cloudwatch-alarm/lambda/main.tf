@@ -1,5 +1,5 @@
 resource "aws_cloudwatch_metric_alarm" "function_error" {
-  alarm_name          = join("-", [var.function-name, "errors"])
+  alarm_name          = join("-", [var.function_name, "errors"])
   comparison_operator = "GreaterThanOrEqualToThreshold"
   evaluation_periods  = "1"
   metric_name         = "Errors"
